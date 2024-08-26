@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="../CSS/formulario.css">
+    <link rel="shortcut icon" href="../imagens/icon.png" type="image/x-icon">
+    <script src="../script/formulario.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Animais Místicos</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Página Inicial</a></li>
+                <li><a href="catalogo.html">Catálogo de Animais Místicos</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="formulario.html">Contato</a></li>
+                <li>
+                    <a href="#">Mais</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Perguntas Frequentes</a></li>
+                        <li><a href="#">Avaliações de Clientes</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Contato</h2>
+            <form id="form" onsubmit="return formulario()">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="cidade">Cidade:</label>
+                <select id="cidade" name="cidade">
+                    <option value="sao-paulo">São Paulo</option>
+                    <option value="rio-de-janeiro">Rio de Janeiro</option>
+                    <option value="boituva">Boituva</option>
+                    <option value="tatui">Tatuí</option>
+                    <option value="ipero">Iperó</option>
+                    <option value="outro">Outro</option>
+                </select>
+    
+                <label for="numero">Número:</label>
+                <input type="number" id="numero" name="numero" required>
+                
+                <label>
+                    <input type="checkbox" id="informações" name="informações">
+                    Desejo receber mais informações
+                </label>
+                
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+            </form>
+        </section>
+    </main>    
+    
+    <footer>
+        <p><a href="mailto:byanncamay1@gmail.com">byancamay1@gmail.com</a></p>
+        <p><a href="tel:+5511965378329">+55 11 96537-8329</a></p>
+        <p><a href="https://www.google.com.br/maps/place/IFSP+-+Campus+Boituva/@-23.2884565,-47.6521061,21z/data=!4m6!3m5!1s0x94c5e3a5f0457a7d:0x84def45b8b2f8734!8m2!3d-23.288399!4d-47.652209!16s%2Fg%2F11g__w5zz?entry=ttu">R. Zélia de Lima Rosa, 100 - Recanto das Primaveras I, Boituva - SP</a></p>
+
+        <p>
+            <a href="https://www.instagram.com/byancamay1" target="_blank" title="Instagram">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+            </a>
+            <a href="https://wa.me/5511965378329" target="_blank" title="WhatsApp">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+            </a>
+        </p>
+    </footer>
+</body>
+</html>

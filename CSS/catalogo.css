@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #debff3;
+}
+
+header {
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(78,9,121,1) 57%, rgba(255,0,236,1) 100%);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    gap: 1rem;
+    margin: 0; 
+    border-radius: 5px; 
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #9779b1;
+    border-radius: 5px;
+}
+
+nav ul li .dropdown {
+    display: none; 
+    position: absolute; 
+    top: 100%;
+    left: 0;
+    background-color: #4a2aa5; 
+    border-radius: 5px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10; 
+}
+
+nav ul li:hover .dropdown {
+    display: block; 
+}
+
+.dropdown li {
+    width: 200px; 
+}
+
+.dropdown li a {
+    padding: 0.5rem 1rem;
+    color: #fff;
+}
+
+.dropdown li a:hover {
+    background-color: #9779b1;
+}
+
+.catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(3, auto);
+    gap: 16px; 
+    padding: 16px; 
+}
+
+.catalog-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    padding: 6px;
+    background-color: #debff3;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgb(34, 0, 88);
+}
+
+.catalog-item img {
+    max-width: 200px;
+    height: auto; 
+    border-radius: 8px;
+}
+
+.catalog-item h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.catalog-item p, .catalog-item ul {
+    margin: 0;
+    list-style: none;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+    background-color: #551680;
+}
+
+footer {
+    background-color: #551680;
+    color: black; 
+    padding: 20px; 
+    bottom: 0;
+    width: 100%; 
+    display: block; 
+    justify-content: space-between; 
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: white; 
+    text-decoration: none;
+    margin: 0 10px; 
+}
+
+footer a:hover {
+    text-decoration: underline; 
+}
+
+footer img {
+    vertical-align: middle; 
+    width: 24px; 
+    height: 24px; 
+    margin: 0 8px; 
+}
